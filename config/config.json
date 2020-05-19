@@ -1,0 +1,4 @@
+{
+  "DEFAULT": {
+    "MANAGERID": "Здесь id менеджера в сети telegram",
+    "TOKENBOT": "Здесь token бота от @BotFather"}}
