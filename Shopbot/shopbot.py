@@ -215,13 +215,9 @@ class Telegramshopbot():
             with open(os.path.abspath('./files/' + buy_name), 'r', encoding = 'UTF-8') as file_buy:
                 self.bot.send_document(chat_id = self.managerid, data = file_buy,
                                        caption=f'Пользователь с id: {user_id} и username:{user_name} сделал заказ.')
-                self.bot.send_document(chat_id=call.message.chat.id, data=file_buy,
-                                       caption='Здесь файл вашего заказа.')
             self.bot.send_message(call.message.chat.id,
                                   'Ваш заказ оформлен. В ближайшее время менеджер свяжется с Вами.')
             os.remove(os.path.abspath('./files/' + buy_name))
-
-
         elif call.data.startswith("buy") and self.vd.verify_user(user_id = call.from_user.id) == True:
             self.bot.answer_callback_query(callback_query_id=call.id,
                                            text='Ваша корзина пуста. Добавьте товар.',
