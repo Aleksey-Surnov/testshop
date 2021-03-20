@@ -6,7 +6,7 @@ emoji==0.5.4
 gunicorn==20.0.4
 idna==2.9
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 numpy==1.18.2
 PySocks==1.7.1
