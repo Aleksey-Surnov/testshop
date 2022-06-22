@@ -8,7 +8,7 @@ idna==2.9
 itsdangerous==1.1.0
 Jinja2==2.11.1
 MarkupSafe==1.1.1
-numpy==1.18.2
+numpy==1.22.0
 PySocks==1.7.1
 pyTelegramBotAPI==3.6.5
 requests==2.23.0
